@@ -5,9 +5,8 @@
 	"main": "find.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "NODE_ENV=development nodemon src/find.js --exec babel-node",
-		"build": "babel src -d dist",
-		"start": "NODE_ENV=development node dist/find.js"
+		"start": "cross-env webpack",
+		"start-nodemon": "nodemon ./dist/server.js"
 	},
 	"author": "",
 	"license": "ISC",
@@ -36,18 +35,24 @@
 		"@babel/plugin-syntax-import-meta": "7.2.0",
 		"@babel/preset-env": "7.6.2",
 		"@babel/preset-flow": "7.0.0",
-		"@babel/register": "7.6.2",
+		"@babel/register": "^7.6.2",
 		"babel-eslint": "10.0.3",
 		"babel-jest": "24.9.0",
+		"babel-loader": "^8.0.6",
 		"babel-plugin-dev-expression": "0.2.2",
 		"babel-plugin-root-import": "6.4.1",
+		"child_process": "^1.0.2",
 		"eslint": "^6.1.0",
 		"eslint-config-airbnb-base": "^14.0.0",
 		"eslint-config-prettier": "6.3.0",
 		"eslint-import-resolver-babel-plugin-root-import": "1.1.1",
+		"eslint-loader": "^3.0.2",
 		"eslint-plugin-import": "^2.18.2",
 		"eslint-plugin-prettier": "3.1.1",
 		"nodemon": "^1.19.3",
-		"prettier": "1.18.2"
+		"prettier": "1.18.2",
+		"webpack": "^4.41.0",
+		"webpack-cli": "^3.3.9",
+		"webpack-shell-plugin": "^0.5.0"
 	}
 }

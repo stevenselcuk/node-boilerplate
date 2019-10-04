@@ -1,3 +1,6 @@
+const double = [1,2,3].map((num) => num * 2);
+console.log(double); // [2,4,6]
+
 console.log(`Node ${process.versions.node} on ${process.platform}.`);
 
 console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);

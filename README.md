@@ -9,13 +9,22 @@ Your starting point baking some potatoes.
 - [x] Babel 7
 - [x] Webpack
 - [x] Eslint 
-- [x] Prettier
-- [ ] Test
+- [x] Prettie
+- [X] Github Actions
+- [X] JSDoc (Documentation Generator)
+- [X] Mocha (Testing)
 - [ ] Test Coverage
 - [ ] CI
-- [ ] Github Actions
+- [ ] Docker
 
-## Start it!
+
+## Utils
+
+- [x] ncof for your args, env and json config management
+- [x] Winston For easy logging (file and console)
+- [x] Signale Good looking console logging
+
+## Init it!
 
 `git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject`
 
@@ -24,6 +33,17 @@ Your starting point baking some potatoes.
 `npm install`
 
 `npm run dev`
+
+## Build it!
+
+`npm run build`
+
+## Start it!
+
+`npm run start`
+
+
+## Folder Structure
 
 
 # 🙌🏻 Niceeeeeee

@@ -1,16 +1,10 @@
-const double = [1,2,3].map((num) => num * 2);
-console.log(double); // [2,4,6]
+import conf from './utils/config'
+import { log } from './utils/logger'
 
-console.log(`Node ${process.versions.node} on ${process.platform}.`);
+log.info(`Boilerplate version ${  conf.get('VERSION')}`)
+log.info(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
 
-console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
 
-console.log(`The parent process is pid ${process.ppid}`);
-
-console.log(`Time ${process.uptime()} sec.`)
-
-const memoryUsage = process.memoryUsage()
-console.log(`Heap Total ${memoryUsage.heapTotal}`)
 
 process.on('SIGINT', () => {
   process.exit(1)

@@ -10,16 +10,20 @@ Your starting point baking some potatoes.
 - [x] Webpack
 - [x] Eslint 
 - [x] Prettier
-- [] Test
-- [] Test Coverage
-- [] CI
-- [] Github Actions
+- [ ] Test
+- [ ] Test Coverage
+- [ ] CI
+- [ ] Github Actions
 
 ## Installation
 
 `git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject`
+
 `cd yourawesomeproject`
+
 `npm install`
+
 `npm run start`
+
 
 # 🙌🏻 Niceeeeeee

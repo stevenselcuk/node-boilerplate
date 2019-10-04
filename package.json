@@ -6,7 +6,9 @@
 	"main": "dist/server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "cross-env webpack",
+		"dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.dev.babel.js",
+		"build": "cross-env NODE_ENV=production webpack --config ./webpack.config.production.babel.js",
+	  "start": "NODE_ENV=production node ./dist/server.js",
 		"start-nodemon": "nodemon ./dist/server.js"
 	},
 	"author": "Steven J. Selcuk",

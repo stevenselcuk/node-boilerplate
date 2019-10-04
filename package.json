@@ -1,0 +1,53 @@
+{
+	"name": "stuff",
+	"version": "1.0.0",
+	"description": "",
+	"main": "find.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "NODE_ENV=development nodemon src/find.js --exec babel-node",
+		"build": "babel src -d dist",
+		"start": "NODE_ENV=development node dist/find.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"local-devices": "^2.0.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.6.2",
+		"@babel/core": "7.6.2",
+		"@babel/node": "7.6.2",
+		"@babel/plugin-proposal-class-properties": "7.5.5",
+		"@babel/plugin-proposal-decorators": "7.6.0",
+		"@babel/plugin-proposal-do-expressions": "7.6.0",
+		"@babel/plugin-proposal-export-default-from": "7.5.2",
+		"@babel/plugin-proposal-export-namespace-from": "7.5.2",
+		"@babel/plugin-proposal-function-bind": "7.2.0",
+		"@babel/plugin-proposal-function-sent": "7.5.0",
+		"@babel/plugin-proposal-json-strings": "7.2.0",
+		"@babel/plugin-proposal-logical-assignment-operators": "7.2.0",
+		"@babel/plugin-proposal-nullish-coalescing-operator": "7.4.4",
+		"@babel/plugin-proposal-numeric-separator": "7.2.0",
+		"@babel/plugin-proposal-optional-chaining": "7.6.0",
+		"@babel/plugin-proposal-pipeline-operator": "7.5.0",
+		"@babel/plugin-proposal-throw-expressions": "7.2.0",
+		"@babel/plugin-syntax-dynamic-import": "7.2.0",
+		"@babel/plugin-syntax-import-meta": "7.2.0",
+		"@babel/preset-env": "7.6.2",
+		"@babel/preset-flow": "7.0.0",
+		"@babel/register": "7.6.2",
+		"babel-eslint": "10.0.3",
+		"babel-jest": "24.9.0",
+		"babel-plugin-dev-expression": "0.2.2",
+		"babel-plugin-root-import": "6.4.1",
+		"eslint": "^6.1.0",
+		"eslint-config-airbnb-base": "^14.0.0",
+		"eslint-config-prettier": "6.3.0",
+		"eslint-import-resolver-babel-plugin-root-import": "1.1.1",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-prettier": "3.1.1",
+		"nodemon": "^1.19.3",
+		"prettier": "1.18.2"
+	}
+}

@@ -1,0 +1,15 @@
+# I am on MacOS
+.DS_Store
+# Dependency directory
+node_modules
+# Not my .env config
+.env
+# Not my config.js
+config.json
+# Not production ready files
+dist
+# Not my logs
+*.log
+# No locks too
+yarn.lock
+package-lock.json

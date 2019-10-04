@@ -42,6 +42,16 @@ Your starting point baking some potatoes.
 
 `npm run start`
 
+## Other Operations
+
+### Run your mocha tests
+
+`npm run mocha`
+
+### Generate your documentation
+
+`npm run doc`
+
 
 ## Folder Structure
 

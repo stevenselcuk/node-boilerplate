@@ -1,6 +1,9 @@
-name: Node CI
+name: Shed And Breakfast 
 
-on: [push]
+on: 
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -17,7 +20,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: Install deps build and test
       run: |
         npm install
         npm run build --if-present

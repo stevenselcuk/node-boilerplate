@@ -9,18 +9,18 @@ Your starting point baking some potatoes.
 - [x] Babel 7
 - [x] Webpack
 - [x] Eslint 
-- [x] Prettie
+- [x] Prettier
 - [X] Github Actions
-- [X] JSDoc (Documentation Generator)
-- [X] Mocha (Testing)
-- [ ] Test Coverage
+- [X] Documentation (JsDoc)
+- [X] Test (Mocha)
+- [ ] Test Coverage (IDK?)
 - [ ] CI
 - [ ] Docker
 
 
 ## Utils
 
-- [x] ncof for your args, env and json config management
+- [x] nconf for your args, env and json config management
 - [x] Winston For easy logging (file and console)
 - [x] Signale Good looking console logging
 

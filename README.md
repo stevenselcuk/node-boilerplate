@@ -15,7 +15,7 @@ Your starting point baking some potatoes.
 - [ ] CI
 - [ ] Github Actions
 
-## Installation
+## Start it!
 
 `git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject`
 
@@ -23,7 +23,7 @@ Your starting point baking some potatoes.
 
 `npm install`
 
-`npm run start`
+`npm run dev`
 
 
 # 🙌🏻 Niceeeeeee

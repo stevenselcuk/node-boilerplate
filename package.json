@@ -1,17 +1,17 @@
 {
-	"name": "stuff",
+	"name": "node-boilerplate",
 	"version": "1.0.0",
-	"description": "",
-	"main": "find.js",
+	"description": "Yet another Node boilerplate.",
+	"repository": "https://github.com/stevenselcuk/node-boilerplate",
+	"main": "dist/server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "cross-env webpack",
 		"start-nodemon": "nodemon ./dist/server.js"
 	},
-	"author": "",
-	"license": "ISC",
+	"author": "Steven J. Selcuk",
+	"license": "MIT",
 	"dependencies": {
-		"local-devices": "^2.0.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "7.6.2",

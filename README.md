@@ -58,7 +58,15 @@ $ npm run serve
 
 ## Other Operations 🤔
 
-Linting, fixing and running tests is in "auto mode" ( just commit and push it 🤜🏻)
+Linting, fixing and running tests and prettier is in "auto mode" to preventing **"hot mess"**
+ ( just commit and push it 🤜🏻)
+
+### Lint and fix your file
+
+```bash
+$ npm run lint
+```
+
 
 ### Run your mocha tests
 
@@ -76,15 +84,15 @@ $ npm run doc
 
 ```coffee
 .
-├── dist/ # Ready to serving files 🥘
-├── src/ # Your awesome Node project 💵
-│ ├── utils/ # Some helpers for you 👄
-│ ├── logger.js # File/console Logging helper
-│ ├── config.js # Manage and use your .env,args and config.json (Ready to use. Really)
-│ ├── index.js # Your entry point!
-└── test/ # Mocha test files, config and helpers are here
-└── docs/ # Your generated documentation files (JSDoc)
-└── logs/ # Log files by logger.js and PM2
+├── /dist/ # Ready to serving files 🥘
+├── /src/ # Your awesome Node project 💵
+│     ├── /utils/ # Some helpers for you 👄
+│            ├── logger.js # File/console Logging helper
+│            ├── config.js # Manage and use your .env,args and config.json (Ready to use. Really)
+│     ├── index.js # Your entry point!
+└── /test/ # Mocha test files, config and helpers are here
+└── /docs/ # Your generated documentation files (JSDoc)
+└── /logs/ # Log files by logger.js and PM2
 └── README.md # You are reading this
 └── pm2.config.js # Some configs for running PM2
 └── package.json # Node packages

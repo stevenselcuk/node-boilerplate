@@ -3,9 +3,9 @@
 	"version": "1.0.0",
 	"description": "Yet another Node boilerplate.",
 	"repository": {
-    "type": "git",
-    "url": "git@github.com:stevenselcuk/node-boilerplate.git"
-  },
+		"type": "git",
+		"url": "git@github.com:stevenselcuk/node-boilerplate.git"
+	},
 	"main": "dist/server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,7 @@
 		"mocha": "NODE_ENV=test ./node_modules/.bin/mocha ./test/**/*.js",
 		"doc": "./node_modules/.bin/jsdoc -c jsdoc.json"
 	},
-  "author": "Steven J. Selcuk <https://github.com/stevenselcuk>",
+	"author": "Steven J. Selcuk <https://github.com/stevenselcuk>",
 	"license": "MIT",
 	"dependencies": {
 		"nconf": "^0.10.0",
@@ -25,21 +25,21 @@
 		"winston": "^3.2.1"
 	},
 	"husky": {
-	"hooks": {
-		"pre-commit": "lint-staged",
-		"pre-push": "npm run mocha",
-	}
-},
-"lint-staged": {
-	"*.js": [
-		"eslint --fix",
-		"git add"
-	],
-	"*.{js,json,css,less,md}": [
-		"prettier --write",
-		"git add"
-	]
-},
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"pre-push": "npm run mocha"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"git add"
+		],
+		"*.{js,json,css,less,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
 	"devDependencies": {
 		"@babel/cli": "7.6.2",
 		"@babel/core": "7.6.2",
@@ -80,6 +80,7 @@
 		"eslint-plugin-prettier": "3.1.1",
 		"jsdoc": "^3.6.3",
 		"jsdoc-mermaid": "^1.0.0",
+		"lint-staged": "^10.0.0-0",
 		"mocha": "^6.2.1",
 		"nodemon": "^1.19.3",
 		"prettier": "1.18.2",

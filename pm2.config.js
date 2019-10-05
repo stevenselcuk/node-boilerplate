@@ -5,7 +5,7 @@ module.exports = {
       script: './dist/server.js',
       watch: false,
       env: {
-        NODE_ENV: 'production',
+        NODE_ENV: 'production'
       },
       // to calculate the max memory per process
       // max_memory_restart: '100M',
@@ -16,7 +16,7 @@ module.exports = {
       error_file: './logs/err.log',
       out_file: './logs/out.log',
       log_date_format: 'YYYY-MM-DD HH:mm:ss',
-      merge_logs: true,
-    },
-  ],
-};
+      merge_logs: true
+    }
+  ]
+}

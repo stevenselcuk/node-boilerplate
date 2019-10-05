@@ -6,7 +6,7 @@ log.info(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
 show.tabby('Hello a cat is here...')
 
 log.error('This is an handsome error...')
-log.info(`Some stufff${  conf.get('VERSION')}`)
+log.info(`Some stufff${conf.get('VERSION')}`)
 
 console.log('Hi')
 process.on('SIGINT', () => {

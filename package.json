@@ -31,11 +31,11 @@
 		}
 	},
 	"lint-staged": {
-		"*.js": [
+		"./src/**/*.js": [
 			"eslint --fix",
 			"git add"
 		],
-		"*.{js,json,css,less,md}": [
+		"./src/**/*.{js,json,css,less,md}": [
 			"prettier --write",
 			"git add"
 		]

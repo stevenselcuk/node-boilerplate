@@ -1,8 +1,7 @@
 import * as conf from 'nconf'
-// We gonna get boilerplate version from package.json for demo purpose only 
+// We gonna get boilerplate version from package.json for demo purpose only
 // You may want to remove it. ¯\_(ツ)_/¯
 import { version } from '../../package.json'
-
 
 conf
   .argv()
@@ -16,10 +15,10 @@ conf
 conf.set('VERSION', version)
 
 /**
-* Create an instance of nConf
-*
-* @type {Instance}
-*
-* @see for details https://github.com/indexzero/nconf#readme
-*/
+ * Create an instance of nConf
+ *
+ * @type {Instance}
+ *
+ * @see for details https://github.com/indexzero/nconf#readme
+ */
 export default conf

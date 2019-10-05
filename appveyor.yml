@@ -1,20 +1,17 @@
-# Test against this version of Node.js
+image: ubuntu
+# Choose your stack in here. Postgres or mongo or mysql I dont care
+stack: node 12, mongodb, redis
+# Your env vars to pass apveyor
 environment:
-  matrix:
-  # node.js
-  - nodejs_version: "12"
-
-# Install scripts. (runs after repo cloning)
+  PORT: 3000
+  YOURANOTHERSECRET: ill8ha5AtykpCCne9Q0RTDaco57Jww06FGrFkjeK4hw=
 install:
-  # Get the latest stable version of Node.js or io.js
-  - ps: Install-Product node $env:nodejs_version
   # install modules
-  - npm install
-
+  - yarn
 # Post-install test scripts.
 test_script:
   # run tests
-  - npm test
-
+  - yarn seed
+  - yarn mocha
 # Don't actually build.
 build: off

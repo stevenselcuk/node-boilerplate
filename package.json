@@ -15,7 +15,7 @@
 		"serve": "npm run build && pm2 start pm2.config.js",
 		"start-nodemon": "nodemon ./dist/server.js",
 		"lint": "eslint 'src/**/*.js' --fix",
-		"mocha": "NODE_ENV=test mocha ./test/**/*.js",
+		"mocha": "mocha ./test/**/*.js",
 		"doc": "./node_modules/.bin/jsdoc -c jsdoc.json"
 	},
 	"author": "Steven J. Selcuk <https://github.com/stevenselcuk>",

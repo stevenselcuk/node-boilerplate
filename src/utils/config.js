@@ -14,9 +14,6 @@ conf
 // Some shorthands to easy env awareness
 // Remove this too if you remove "version"
 conf.set('VERSION', version)
-conf.set('IS_PROD', process.env.NODE_ENV === 'production')
-conf.set('IS_DEV', process.env.NODE_ENV === 'development')
-conf.set('IS_TEST', process.env.NODE_ENV === 'test')
 
 /**
 * Create an instance of nConf

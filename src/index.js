@@ -1,10 +1,9 @@
 import conf from './utils/config'
-import { log } from './utils/logger'
+import { log, show } from './utils/logger'
 
 log.info(`Boilerplate version ${  conf.get('VERSION')}`)
 log.info(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
-
-
+show.tabby('Hello a cat is here...')
 
 process.on('SIGINT', () => {
   process.exit(1)

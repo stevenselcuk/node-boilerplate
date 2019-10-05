@@ -34,10 +34,10 @@ format: format.combine(
 		format: 'YYYY-MM-DD HH:mm:ss'
 	}),
 	format.errors({ stack: true }),
-	format.colorize({ all: true }),
+	format.colorize({ all: false }),
 	format.simple()
 ),
-//  defaultMeta: { service: 'Coeus API' },
+//  defaultMeta: { service: 'Tabby Cat Boilerplate' },
 transports: [
 	new transports.File({
 		filename: 'error.log',

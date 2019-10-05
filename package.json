@@ -2,7 +2,10 @@
 	"name": "node-boilerplate",
 	"version": "1.0.0",
 	"description": "Yet another Node boilerplate.",
-	"repository": "https://github.com/stevenselcuk/node-boilerplate",
+	"repository": {
+    "type": "git",
+    "url": "git@github.com:stevenselcuk/node-boilerplate.git"
+  },
 	"main": "dist/server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +16,7 @@
 		"mocha": "NODE_ENV=test ./node_modules/.bin/mocha ./test/**/*.js",
 		"doc": "./node_modules/.bin/jsdoc -c jsdoc.json"
 	},
-	"author": "Steven J. Selcuk",
+  "author": "Steven J. Selcuk <https://github.com/stevenselcuk>",
 	"license": "MIT",
 	"dependencies": {
 		"nconf": "^0.10.0",
@@ -21,6 +24,22 @@
 		"signale": "^1.4.0",
 		"winston": "^3.2.1"
 	},
+	"husky": {
+	"hooks": {
+		"pre-commit": "lint-staged",
+		"pre-push": "npm run mocha",
+	}
+},
+"lint-staged": {
+	"*.js": [
+		"eslint --fix",
+		"git add"
+	],
+	"*.{js,json,css,less,md}": [
+		"prettier --write",
+		"git add"
+	]
+},
 	"devDependencies": {
 		"@babel/cli": "7.6.2",
 		"@babel/core": "7.6.2",

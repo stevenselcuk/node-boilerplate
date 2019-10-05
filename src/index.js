@@ -5,6 +5,9 @@ log.info(`Boilerplate version ${  conf.get('VERSION')}`)
 log.info(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
 show.tabby('Hello a cat is here...')
 
+
+
+
 process.on('SIGINT', () => {
   process.exit(1)
 })

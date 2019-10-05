@@ -41,19 +41,19 @@ $ npm run dev
 ## Build it! 🔧
 
 ```bash
-$ npm run build`
+$ npm run build
 ```
 
 ## Start it! 🍍
 
 ```bash
-$ npm run start`
+$ npm run start
 ```
 
 ## Serve it! 📦
 
 ```bash
-$ npm run serve`
+$ npm run serve
 ```
 
 ## Other Operations 🤔
@@ -63,13 +63,13 @@ Linting, fixing and running tests is in "auto mode" ( just commit and push it �
 ### Run your mocha tests
 
 ```bash
-$ npm run mocha`
+$ npm run mocha
 ```
 
 ### Generate your documentation
 
 ```bash
-$ npm run doc`
+$ npm run doc
 ```
 
 ## Folder Structure

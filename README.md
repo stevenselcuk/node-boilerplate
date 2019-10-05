@@ -17,7 +17,7 @@ It's ready to eat! **Just add water.** Tada 🎉
 - [x] Test (Mocha)
 - [x] PM2 (Serve)
 - [ ] Test Coverage (IDK?)
-- [ ] CI
+- [x] Appconveyor
 - [ ] Docker
 
 ## Utils
@@ -37,27 +37,27 @@ $ git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject
 
 $ cd yourawesomeproject
 
-$ npm install
+$ yarn
 
-$ npm run dev
+$ yarn dev
 ```
 
 ## Build it! 🔧
 
 ```bash
-$ npm run build
+$ yarn build
 ```
 
 ## Start it! 🍍
 
 ```bash
-$ npm run start
+$ yarn start
 ```
 
 ## Serve it! 📦
 
 ```bash
-$ npm run serve
+$ yarn serve
 ```
 
 ## Other Operations 🤔
@@ -68,19 +68,19 @@ Linting, fixing and running tests and prettier is in "auto mode" to preventing *
 ### Lint and fix your file
 
 ```bash
-$ npm run lint
+$ yarn lint
 ```
 
 ### Run your mocha tests
 
 ```bash
-$ npm run mocha
+$ yarn mocha
 ```
 
 ### Generate your documentation
 
 ```bash
-$ npm run doc
+$ yarn doc
 ```
 
 ## Folder Structure
@@ -89,10 +89,10 @@ $ npm run doc
 .
 ├── /dist/ # Ready to serving files 🥘
 ├── /src/ # Your awesome Node project 💵
-│     ├── /utils/ # Some helpers for you 👄
-│            ├── logger.js # File/console Logging helper
-│            ├── config.js # Manage and use your .env,args and config.json (Ready to use. Really)
-│     ├── index.js # Your entry point!
+│   ├── /utils/ # Some helpers for you 👄
+│        ├── logger.js # File/console Logging helper
+│        ├── config.js # Manage and use your .env,args and config.json (Ready to use. Really)
+│   ├── index.js # Your entry point!
 └── /test/ # Mocha test files, config and helpers are here
 └── /docs/ # Your generated documentation files (JSDoc)
 └── /logs/ # Log files by logger.js and PM2

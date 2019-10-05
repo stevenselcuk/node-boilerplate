@@ -23,6 +23,8 @@ Your starting point baking some potatoes.
 - [x] nconf for your args, env and json config management
 - [x] Winston For easy logging (file and console)
 - [x] Signale Good looking console logging
+- [x] Lint staged
+- [x] Huskey
 
 ## Init it!
 

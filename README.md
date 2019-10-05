@@ -30,6 +30,8 @@ It's ready to eat! **Just add water.** Tada 🎉
 
 ## Init it! ⚡️
 
+Just click **Use this template** button or
+
 ```bash
 $ git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject
 

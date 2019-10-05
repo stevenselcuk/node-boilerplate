@@ -28,25 +28,33 @@ It's ready to eat! **Just add water.** Tada 🎉
 
 ## Init it! ⚡️
 
-`git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject`
+```bash
+$ git clone https://github.com/stevenselcuk/node-boilerplate yourawesomeproject
 
-`cd yourawesomeproject`
+$ cd yourawesomeproject
 
-`npm install`
+$ npm install
 
-`npm run dev`
+$ npm run dev
+```
 
 ## Build it! 🔧
 
-`npm run build`
+```bash
+$ npm run build`
+```
 
 ## Start it! 🍍
 
-`npm run start`
+```bash
+$ npm run start`
+```
 
 ## Serve it! 📦
 
-`npm run serve`
+```bash
+$ npm run serve`
+```
 
 ## Other Operations 🤔
 
@@ -54,14 +62,20 @@ Linting, fixing and running tests is in "auto mode" ( just commit and push it �
 
 ### Run your mocha tests
 
-`npm run mocha`
+```bash
+$ npm run mocha`
+```
 
 ### Generate your documentation
 
-`npm run doc`
+```bash
+$ npm run doc`
+```
 
 ## Folder Structure
-```
+
+```coffee
+.
 ├── dist/ # Ready to serving files 🥘
 ├── src/ # Your awesome Node project 💵
 │ ├── utils/ # Some helpers for you 👄
@@ -75,4 +89,5 @@ Linting, fixing and running tests is in "auto mode" ( just commit and push it �
 └── pm2.config.js # Some configs for running PM2
 └── package.json # Node packages
 ```
+
 # 🙌🏻 That's all brothers.

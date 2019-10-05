@@ -7,7 +7,7 @@ show.tabby('Hello a cat is here...')
 
 log.info('Some stufff' + conf.get('VERSION'))
 
-
+console.log('Hi')
 process.on('SIGINT', () => {
   process.exit(1)
 })

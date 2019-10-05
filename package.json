@@ -34,10 +34,10 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "eslint --fix"
     ],
-    "*.{js,json,css,less,md}": [
+    "src/**/*.{js,json,css,less,md}": [
       "prettier --write"
     ]
   },
@@ -70,6 +70,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-dev-expression": "0.2.2",
     "babel-plugin-root-import": "6.4.1",
+    "core-js": "^3.2.1",
     "docdash": "^1.1.1",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",

@@ -13,7 +13,7 @@ module.exports = api => {
         {
           targets: { node: 'current' },
           useBuiltIns: 'usage',
-          corejs: 2
+          corejs: 3
         }
       ],
       require('@babel/preset-flow')

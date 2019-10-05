@@ -9,3 +9,4 @@
 global._ = require('lodash');
 global.chai = require('chai');
 */
+require("@babel/register")

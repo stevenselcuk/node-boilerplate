@@ -40,7 +40,7 @@ format: format.combine(
 //  defaultMeta: { service: 'Tabby Cat Boilerplate' },
 transports: [
 	new transports.File({
-		filename: 'error.log',
+		filename: 'logs/error.log',
 		level: 'error',
 		handleExceptions: true,
 		json: true,
@@ -61,7 +61,7 @@ transports: [
 		zippedArchive: false,
 		options: { encoding: 'utf8' }
 	}),
-	new transports.File({ filename: 'logfile.log' }),
+	new transports.File({ filename: 'logs/info.log' }),
 //    new transports.MongoDB({ db: MONGO_URL })
 ]
 })

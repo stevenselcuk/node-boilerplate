@@ -8,11 +8,13 @@
   },
   "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run mocha",
     "dev": "NODE_ENV=development webpack --config ./webpack.config.dev.babel.js",
     "build": "NODE_ENV=production webpack --config ./webpack.config.production.babel.js",
     "start": "NODE_ENV=production node ./dist/server.js",
+    "serve": "npm run build && pm2 start pm2.config.js",
     "start-nodemon": "nodemon ./dist/server.js",
+		"lint": "eslint 'src/**/*.js' --fix",
     "mocha": "NODE_ENV=test ./node_modules/.bin/mocha ./test/**/*.js",
     "doc": "./node_modules/.bin/jsdoc -c jsdoc.json"
   },
@@ -22,6 +24,7 @@
     "nconf": "^0.10.0",
     "path": "^0.12.7",
     "signale": "^1.4.0",
+		"pm2": "^3.5.1",
     "winston": "^3.2.1"
   },
   "husky": {
@@ -67,7 +70,6 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-dev-expression": "0.2.2",
     "babel-plugin-root-import": "6.4.1",
-    "child_process": "^1.0.2",
     "docdash": "^1.1.1",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",

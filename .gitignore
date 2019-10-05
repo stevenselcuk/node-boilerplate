@@ -11,5 +11,4 @@ dist
 # Not my logs
 *.log
 # No locks too
-yarn.lock
-package-lock.json
+logs

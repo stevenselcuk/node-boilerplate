@@ -13,6 +13,7 @@ Your starting point baking some potatoes.
 - [X] Github Actions
 - [X] Documentation (JsDoc)
 - [X] Test (Mocha)
+- [X] PM2 (Serve)
 - [ ] Test Coverage (IDK?)
 - [ ] CI
 - [ ] Docker
@@ -23,8 +24,8 @@ Your starting point baking some potatoes.
 - [x] nconf for your args, env and json config management
 - [x] Winston For easy logging (file and console)
 - [x] Signale Good looking console logging
-- [x] Lint staged
-- [x] Huskey
+- [x] Lint staged for preventing hot mess
+- [x] Huskey for lint and testing hooks before commit and push
 
 ## Init it!
 

@@ -16,7 +16,8 @@
 		"start-nodemon": "nodemon ./dist/server.js",
 		"lint": "eslint 'src/**/*.js' --fix",
 		"mocha": "mocha ./test/**/*.js",
-		"doc": "./node_modules/.bin/jsdoc -c jsdoc.json"
+		"doc": "./node_modules/.bin/jsdoc -c jsdoc.json",
+		"release": "standard-version"
 	},
 	"author": "Steven J. Selcuk <https://github.com/stevenselcuk>",
 	"license": "MIT",
@@ -35,7 +36,7 @@
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged",
-			"pre-push": "npm run mocha"
+			"pre-push": "npm run mocha && npm run release"
 		}
 	},
 	"lint-staged": {
@@ -96,6 +97,7 @@
 		"nodemon": "^1.19.3",
 		"nodemon-webpack-plugin": "^4.1.1",
 		"prettier": "1.18.2",
+		"standard-version": "^7.0.0",
 		"webpack": "^4.41.0",
 		"webpack-cli": "^3.3.9",
 		"webpack-shell-plugin": "^0.5.0"

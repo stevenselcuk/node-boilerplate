@@ -36,7 +36,7 @@
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged",
-			"pre-push": "npm run mocha && npm run release"
+			"pre-push": "npm run mocha"
 		}
 	},
 	"lint-staged": {

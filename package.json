@@ -25,10 +25,11 @@
 	},
 	"homepage": "https://github.com/stevenselcuk/node-boilerplate#readme",
 	"dependencies": {
+		"lodash": "^4.17.15",
 		"nconf": "^0.10.0",
 		"path": "^0.12.7",
-		"signale": "^1.4.0",
 		"pm2": "^3.5.1",
+		"signale": "^1.4.0",
 		"winston": "^3.2.1"
 	},
 	"husky": {
@@ -73,6 +74,7 @@
 		"babel-jest": "24.9.0",
 		"babel-loader": "^8.0.6",
 		"babel-plugin-dev-expression": "0.2.2",
+		"babel-plugin-lodash": "^3.3.4",
 		"babel-plugin-root-import": "6.4.1",
 		"babel-register": "^6.26.0",
 		"chai": "^4.2.0",
@@ -89,6 +91,7 @@
 		"jsdoc": "^3.6.3",
 		"jsdoc-mermaid": "^1.0.0",
 		"lint-staged": "^9.4.1",
+		"lodash-webpack-plugin": "^0.11.5",
 		"mocha": "^6.2.1",
 		"nodemon": "^1.19.3",
 		"prettier": "1.18.2",

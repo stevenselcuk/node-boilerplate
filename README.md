@@ -24,6 +24,7 @@ It's ready to eat! **Just add water.** Tada 🎉
 
 - [x] nconf for your args, env and json config management
 - [x] Winston For easy logging (file and console)
+- [x] Lodash cherry pick 🍒👌
 - [x] Signale Good looking console logging
 - [x] Lint staged for preventing hot mess
 - [x] Huskey for lint and testing hooks before commit and push

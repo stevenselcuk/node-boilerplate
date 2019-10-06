@@ -1,16 +1,21 @@
-const WebpackShellPlugin = require("webpack-shell-plugin");
+const WebpackShellPlugin = require('webpack-shell-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
 	entry: ["./src"],
 	target: "node",
-	mode: 'production',
+	mode: 'development',
 	watch: true,
 	module: {
 		rules: [
 			{
 				test: /\.(js)$/,
 				exclude: /node_modules/,
-				use: ["babel-loader"]
+				loader: 'babel-loader',
+				options: {
+	        plugins: ['lodash'],
+	        presets: [['@babel/preset-env', { modules: false, targets: { node: 'current' } }]]
+       },
 			},
 			{
 				test: /\.js$/,
@@ -27,6 +32,7 @@ module.exports = {
 	plugins: [
 		new WebpackShellPlugin({
 			onBuildEnd: ["nodemon dist/server.js — watch dist/server.js"]
-		})
+		}),
+		 new LodashModuleReplacementPlugin
 	]
 };

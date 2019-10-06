@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import conf from './utils/config'
 import { log, show } from './utils/logger'
 
@@ -11,6 +12,21 @@ log.info(`Boilerplate version ${conf.get('VERSION')}`)
 log.error(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
 // Yet another console log. But more stylish
 show.tabby('Hello a cat is here...')
+
+const numbers = [1, 5, 8, 10, 1, 5, 15, 42, 5];
+
+const uniqNumbers = _.uniq(numbers);
+show.tabby(uniqNumbers)
+
+const tailNumbers = _.tail(numbers);
+show.tabby(tailNumbers)
+
+const getRandomNumber = () => { return Math.round(Math.random() * 100); };
+
+const randomNumbers = _.times(8, getRandomNumber);
+
+show.tabby(randomNumbers)
+
 
 process.on('SIGINT', () => {
   process.exit(1)

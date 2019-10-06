@@ -1,5 +1,6 @@
-const WebpackShellPlugin = require('webpack-shell-plugin');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
+const NodemonPlugin = require('nodemon-webpack-plugin');
+const path = require('path')
 
 module.exports = {
 	entry: ["./src"],
@@ -30,9 +31,28 @@ module.exports = {
 		filename: "server.js"
 	},
 	plugins: [
-		new WebpackShellPlugin({
-			onBuildEnd: ["nodemon dist/server.js — watch dist/server.js"]
-		}),
+		new NodemonPlugin({
+    // args: ['demo'],
+
+    // What to watch.
+    watch: path.resolve('./dist'),
+
+    // Files to ignore.
+    ignore: ['*.js.map'],
+
+    // Detailed log.
+    verbose: true,
+
+    // Node arguments.
+    //  nodeArgs: ['--debug=9222'],
+
+    // If using more than one entry, you can specify
+    // which output file will be restarted.
+    script: './dist/server.js',
+
+    // Extensions to watch
+    ext: 'js,njk,json',
+}),
 		 new LodashModuleReplacementPlugin
 	]
 };

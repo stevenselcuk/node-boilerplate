@@ -1,4 +1,4 @@
 {
-  "ignore": ["node_modules/*", "test/*", "dist/*", "docs/*"],
+  "ignore": ["node_modules/*", "test/*", "docs/*"],
   "delay": "300"
 }

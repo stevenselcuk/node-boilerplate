@@ -13,20 +13,21 @@ log.error(`A variable from your config.json: ${conf.get('YOUR_SECRET_STUFF')}`)
 // Yet another console log. But more stylish
 show.tabby('Hello a cat is here...')
 
-const numbers = [1, 5, 8, 10, 1, 5, 15, 42, 5];
+const numbers = [1, 5, 8, 10, 1, 5, 15, 42, 5, 542, 812798, 28]
 
-const uniqNumbers = _.uniq(numbers);
+const uniqNumbers = _.uniq(numbers)
 show.tabby(uniqNumbers)
 
-const tailNumbers = _.tail(numbers);
+const tailNumbers = _.tail(numbers)
 show.tabby(tailNumbers)
 
-const getRandomNumber = () => { return Math.round(Math.random() * 100); };
+const getRandomNumber = () => {
+  return Math.round(Math.random() * 100)
+}
 
-const randomNumbers = _.times(8, getRandomNumber);
+const randomNumbers = _.times(8, getRandomNumber)
 
 show.tabby(randomNumbers)
-
 
 process.on('SIGINT', () => {
   process.exit(1)

@@ -5,6 +5,8 @@ It's ready to eat! **Just add water.** Tada 🎉
 [![Greenkeeper badge](https://badges.greenkeeper.io/stevenselcuk/node-boilerplate.svg)](https://greenkeeper.io/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/682d70d4b5ab5f71027f/maintainability)](https://codeclimate.com/github/stevenselcuk/node-boilerplate/maintainability)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/95180a62296048f59654554ea68a7fb8)](https://www.codacy.com/manual/stevenjselcuk/node-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=stevenselcuk/node-boilerplate&utm_campaign=Badge_Grade)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
 
 ## Features
 

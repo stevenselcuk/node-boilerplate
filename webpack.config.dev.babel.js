@@ -1,6 +1,7 @@
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const NodemonPlugin = require('nodemon-webpack-plugin');
 const path = require('path')
+const WebpackBar = require('webpackbar');
 
 module.exports = {
 	entry: ["./src"],
@@ -31,6 +32,7 @@ module.exports = {
 		filename: "server.js"
 	},
 	plugins: [
+		new WebpackBar(),
 		new NodemonPlugin({
     // args: ['demo'],
 

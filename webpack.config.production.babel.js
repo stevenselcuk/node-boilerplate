@@ -1,3 +1,5 @@
+const WebpackBar = require('webpackbar');
+
 module.exports = {
 	entry: ["./src"],
 	target: "node",
@@ -23,5 +25,6 @@ module.exports = {
 		filename: "server.js"
 	},
 	plugins: [
+		new WebpackBar(),
 	]
 };

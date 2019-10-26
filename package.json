@@ -83,7 +83,7 @@
 		"docdash": "^1.1.1",
 		"eslint": "^6.1.0",
 		"eslint-config-airbnb-base": "^14.0.0",
-		"eslint-config-prettier": "6.4.0",
+		"eslint-config-prettier": "6.5.0",
 		"eslint-import-resolver-babel-plugin-root-import": "1.1.1",
 		"eslint-loader": "^3.0.2",
 		"eslint-plugin-import": "^2.18.2",
